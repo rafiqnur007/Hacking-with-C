@@ -24,4 +24,5 @@ Hash Cracking </a>
 
 
 
-<h2> <i> another tool add in Next 24 Hours </i> </h2>
+<h2> PDF Copy Coming Soon </h2>
+<h3> <i> another tool add in Next 24 Hours </i> </h3>
