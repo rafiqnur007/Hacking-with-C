@@ -13,6 +13,9 @@ Port Scanner </a>
 <a href="https://github.com/rafiqnur007/Hacking-with-C/blob/a59932d504a1a6422f3717ca424c7f9a83602033/Hash%20cracking">
 Hash Cracking </a>
 <li>
+<a href="https://github.com/rafiqnur007/Hacking-with-C/blob/76c3c1b72fe32e5c95a99355fde599c323ec02ba/Brute%20force">
+Brute force <a>
+<li>
 <a href="https://github.com/rafiqnur007/Hacking-with-C/blob/a59932d504a1a6422f3717ca424c7f9a83602033/DNS%20%20quary%20lookup"> DNS quarry Lookup </a>
 </li>
 
