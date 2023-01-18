@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char password[] = "password";
+    char guess[9];
+    int max_length = 8;
+
+    for(int i = 0; i < max_length; i++) {
+        for(int j = 'a'; j <= 'z'; j++) {
+            guess[i] = j;
+            if(strcmp(guess, password) == 0) {
+                printf("Password found: %s\n", guess);
+                return 0;
+            }
+        }
+    }
+    printf("Password not found\n");
+    return 0;
+}
