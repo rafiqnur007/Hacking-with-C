@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(int argc, char *argv[])
+{
+    // Check for correct usage
+    if (argc != 2) {
+        fprintf(stderr, "Usage: %s pid\n", argv[0]);
+        return 1;
+    }
+
+    // Open the file that describes the process's memory map
+    char filename[256];
+    sprintf(filename, "/proc/%s/maps", argv[1]);
+    FILE *file = fopen(filename, "r");
+
+    // Make sure the file was opened successfully
+    if (!file) {
+        perror("fopen");
+        return 1;
+    }
+
+    // Read through the file line by line
+    char line[1024];
+    unsigned long long int total = 0;
+    while (fgets(line, sizeof(line), file)) {
+        // Parse the line to extract the memory range
+        char range[256];
+        sscanf(line, "%s", range);
+        // Get the size of the range in bytes
+        char *end;
+        unsigned long long int size = strtoull(range, &end, 16);
+        // Add the size to the total
+        total += size;
+    }
+
+    // Close the file
+    fclose(file);
+
+    // Print the total memory usage in bytes
+    printf("Total memory usage: %llu bytes\n", total);
+
+    return 0;
+}
+
+
+
+
+// You can then run this code as following:
+./a.out <pid>
