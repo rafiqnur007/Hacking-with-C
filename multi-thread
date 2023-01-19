@@ -1,0 +1,28 @@
+#include <pthread.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+void *print_hello(void *arg) {
+    printf("Hello, World!\n");
+    return NULL;
+}
+
+int main(int argc, char *argv[]) {
+    pthread_t thread;
+
+    // Create the thread
+    int rc = pthread_create(&thread, NULL, print_hello, NULL);
+    if (rc) {
+        printf("Error: pthread_create returned %d\n", rc);
+        exit(EXIT_FAILURE);
+    }
+
+    // Wait for the thread to finish
+    rc = pthread_join(thread, NULL);
+    if (rc) {
+        printf("Error: pthread_join returned %d\n", rc);
+        exit(EXIT_FAILURE);
+    }
+
+    return 0;
+}
