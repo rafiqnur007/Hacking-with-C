@@ -19,7 +19,18 @@ Hash Cracking </a>
 Brute force <a>
 <li>
 <a href="https://github.com/rafiqnur007/Hacking-with-C/blob/a59932d504a1a6422f3717ca424c7f9a83602033/DNS%20%20quary%20lookup"> DNS quarry Lookup </a>
+<li>
+<a href="https://github.com/rafiqnur007/Hacking-with-C/blob/23f8df8508bae10a0ea4c2cc27f1dd1956e0671b/server%20for%20Buffer%20%20Overflow">Create Server For Buffer 
+Overflow(Basic example) </a>
+<li>
+<a href="https://github.com/rafiqnur007/Hacking-with-C/blob/23f8df8508bae10a0ea4c2cc27f1dd1956e0671b/multi-thread">Multi Thread in C</a>
+<li>
+<a href="https://github.com/rafiqnur007/Hacking-with-C/blob/23f8df8508bae10a0ea4c2cc27f1dd1956e0671b/memory%20analyze"> Memory Analyze</a>
+
+
+
 </li>
+
 
 
 </ol>
